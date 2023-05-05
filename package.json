@@ -1,0 +1,16 @@
+{
+  "name": "playwright-test",
+  "engines": {
+    "pnpm": ">= 8",
+    "node": ">= 18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.0.3",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

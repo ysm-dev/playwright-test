@@ -1,0 +1,41 @@
+name: Playwright Tests
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - name: Install dependencies
+        run: pnpm install
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install --with-deps
+
+      - name: Set up Xvfb
+        run: sudo apt-get install -y xvfb
+
+      - name: Start Xvfb
+        run: Xvfb :99 -ac -screen 0 1280x1024x24 &
+        env:
+          DISPLAY: :99
+
+      - name: Run Playwright tests
+        run: pnpm exec playwright test
+        env:
+          DO_URL: ${{ secrets.DO_URL }}
+          DISPLAY: :99
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
