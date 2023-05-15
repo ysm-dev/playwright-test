@@ -16,6 +16,10 @@ jobs:
           version: latest
       - name: Install dependencies
         run: pnpm install
+      
+      - name: apt-get update 
+        run: sudo apt-get update
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
