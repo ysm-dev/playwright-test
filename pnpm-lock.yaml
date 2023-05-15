@@ -2,21 +2,21 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@types/node':
-    specifier: ^20.0.0
-    version: 20.0.0
+    specifier: 20.1.4
+    version: 20.1.4
   dotenv:
-    specifier: ^16.0.3
+    specifier: 16.0.3
     version: 16.0.3
   playwright-extra:
-    specifier: ^4.3.6
+    specifier: 4.3.6
     version: 4.3.6
   puppeteer-extra-plugin-stealth:
-    specifier: ^2.11.2
+    specifier: 2.11.2
     version: 2.11.2(playwright-extra@4.3.6)
 
 devDependencies:
   '@playwright/test':
-    specifier: ^1.33.0
+    specifier: 1.33.0
     version: 1.33.0
 
 packages:
@@ -26,7 +26,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      '@types/node': 20.0.0
+      '@types/node': 20.1.4
       playwright-core: 1.33.0
     optionalDependencies:
       fsevents: 2.3.2
@@ -42,8 +42,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node@20.0.0:
-    resolution: {integrity: sha512-cD2uPTDnQQCVpmRefonO98/PPijuOnnEy5oytWJFPY1N9aJCz2wJ5kSGWO+zJoed2cY2JxQh6yBuUq4vIn61hw==}
+  /@types/node@20.1.4:
+    resolution: {integrity: sha512-At4pvmIOki8yuwLtd7BNHl3CiWNbtclUbNtScGx4OHfBd4/oWoJC8KRCIxXwkdndzhxOsPXihrsOoydxBjlE9Q==}
 
   /arr-union@3.1.0:
     resolution: {integrity: sha512-sKpyeERZ02v1FeCZT8lrfJq5u6goHCtpTAzPwJYe7c8SPFOboNjNg1vz2L4VTn9T4PQxEx13TbXLmYUcS6Ug7Q==}

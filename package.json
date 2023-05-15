@@ -5,12 +5,12 @@
     "node": ">= 18"
   },
   "devDependencies": {
-    "@playwright/test": "^1.33.0"
+    "@playwright/test": "1.33.0"
   },
   "dependencies": {
-    "@types/node": "^20.0.0",
-    "dotenv": "^16.0.3",
-    "playwright-extra": "^4.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2"
+    "@types/node": "20.1.4",
+    "dotenv": "16.0.3",
+    "playwright-extra": "4.3.6",
+    "puppeteer-extra-plugin-stealth": "2.11.2"
   }
 }
