@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Install Playwright Browsers
-        run: pnpx playwright install-deps chromium
+        run: npx playwright install --with-deps chromium
 
       - name: Set up Xvfb
         run: sudo apt-get install -y xvfb
