@@ -21,7 +21,7 @@ jobs:
         run: sudo apt-get update
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps --fix-missing chromium
 
       - name: Set up Xvfb
         run: sudo apt-get install -y xvfb
