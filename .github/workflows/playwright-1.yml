@@ -11,18 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: microsoft/playwright-github-action@v1
       - uses: pnpm/action-setup@v2
         with:
           version: latest
       - name: Install dependencies
         run: pnpm install
       
-      # - name: apt-get update 
-      #   run: sudo apt-get update
-
-      # - name: Install Playwright Browsers
-      #   run: npx playwright install --with-deps chromium
+      - name: Install Playwright Browsers
+        run: pnpx playwright install
 
       - name: Set up Xvfb
         run: sudo apt-get install -y xvfb
