@@ -5,7 +5,7 @@
     "node": ">= 18"
   },
   "devDependencies": {
-    "@playwright/test": "latest"
+    "@playwright/test": "1.35.0"
   },
   "dependencies": {
     "@types/node": "20.2.5",

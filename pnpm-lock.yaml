@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -20,7 +20,7 @@ dependencies:
 
 devDependencies:
   '@playwright/test':
-    specifier: latest
+    specifier: 1.35.0
     version: 1.35.0
 
 packages:
