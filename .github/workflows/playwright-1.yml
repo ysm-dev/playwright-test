@@ -21,7 +21,7 @@ jobs:
         run: pnpm install
 
       - name: Install Playwright Browsers
-        run: pnpx playwright install
+        run: pnpx playwright install --with-deps
 
       - name: Set up Xvfb
         run: sudo apt-get install -y xvfb

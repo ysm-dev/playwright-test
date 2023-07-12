@@ -20,24 +20,24 @@ dependencies:
 
 devDependencies:
   '@playwright/test':
-    specifier: 1.35.0
-    version: 1.35.0
+    specifier: 1.36.0
+    version: 1.36.0
 
 packages:
 
-  /@playwright/test@1.35.0:
-    resolution: {integrity: sha512-6qXdd5edCBynOwsz1YcNfgX8tNWeuS9fxy5o59D0rvHXxRtjXRebB4gE4vFVfEMXl/z8zTnAzfOs7aQDEs8G4Q==}
+  /@playwright/test@1.36.0:
+    resolution: {integrity: sha512-yN+fvMYtiyLFDCQos+lWzoX4XW3DNuaxjBu68G0lkgLgC6BP+m/iTxJQoSicz/x2G5EsrqlZTqTIP9sTgLQerg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
       '@types/node': 20.2.5
-      playwright-core: 1.35.0
+      playwright-core: 1.36.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /@types/debug@4.1.7:
-    resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
+  /@types/debug@4.1.8:
+    resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
     dependencies:
       '@types/ms': 0.7.31
     dev: false
@@ -257,8 +257,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /playwright-core@1.35.0:
-    resolution: {integrity: sha512-muMXyPmIx/2DPrCHOD1H1ePT01o7OdKxKj2ebmCAYvqhUy+Y1bpal7B0rdoxros7YrXI294JT/DWw2LqyiqTPA==}
+  /playwright-core@1.36.0:
+    resolution: {integrity: sha512-7RTr8P6YJPAqB+8j5ATGHqD6LvLLM39sYVNsslh78g8QeLcBs5750c6+msjrHUwwGt+kEbczBj1XB22WMwn+WA==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
@@ -354,7 +354,7 @@ packages:
       puppeteer-extra:
         optional: true
     dependencies:
-      '@types/debug': 4.1.7
+      '@types/debug': 4.1.8
       debug: 4.3.4
       merge-deep: 3.0.3
       playwright-extra: 4.3.6

@@ -4,8 +4,11 @@
     "pnpm": ">= 8",
     "node": ">= 18"
   },
+  "scripts": {
+    "test": "playwright test"
+  },
   "devDependencies": {
-    "@playwright/test": "1.35.0"
+    "@playwright/test": "1.36.0"
   },
   "dependencies": {
     "@types/node": "20.2.5",
