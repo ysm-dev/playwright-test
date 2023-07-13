@@ -18,7 +18,7 @@ jobs:
         with:
           version: latest
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install -f
 
       - name: Install Playwright Browsers
         run: pnpx playwright install --with-deps

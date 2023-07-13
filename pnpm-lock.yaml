@@ -20,7 +20,7 @@ dependencies:
 
 devDependencies:
   '@playwright/test':
-    specifier: 1.36.0
+    specifier: latest
     version: 1.36.0
 
 packages:

@@ -8,7 +8,7 @@
     "test": "playwright test"
   },
   "devDependencies": {
-    "@playwright/test": "1.36.0"
+    "@playwright/test": "latest"
   },
   "dependencies": {
     "@types/node": "20.2.5",
