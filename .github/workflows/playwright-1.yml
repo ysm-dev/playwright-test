@@ -18,7 +18,7 @@ jobs:
         with:
           version: latest
       - name: Install dependencies
-        run: pnpm install -f
+        run: pnpm i -f --fix-lockfile
 
       - name: Install Playwright Browsers
         run: pnpx playwright install --with-deps
