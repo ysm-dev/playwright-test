@@ -16,9 +16,9 @@ test("FB", async ({}) => {
     viewport: { width: 1920, height: 1080 },
   });
 
-  const xs = process.env.xs;
+  const XS = process.env.XS;
 
-  if (!xs) throw new Error("env not found");
+  if (!XS) throw new Error("env not found");
 
   await context.addCookies([
     {
@@ -33,7 +33,7 @@ test("FB", async ({}) => {
     },
     {
       name: "xs",
-      value: xs,
+      value: XS,
       domain: ".facebook.com",
       path: "/",
       expires: -1,
