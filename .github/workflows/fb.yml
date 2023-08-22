@@ -37,7 +37,7 @@ jobs:
       - name: Run Playwright
         run: pnpm exec playwright test tests/fb.spec.ts
         env:
-          xs: ${{ secrets.xs }}
+          XS: ${{ secrets.XS }}
           DISPLAY: :99
 
       - name: Commit
