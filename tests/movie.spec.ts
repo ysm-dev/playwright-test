@@ -7,7 +7,7 @@ const DO_URL = process.env.DO_URL
 
 chromium.use(stealth())
 
-test('has title', async ({}) => {
+test('Movie', async ({}) => {
   const browser = await chromium.launch()
   const context = await browser.newContext()
   const page = await context.newPage()

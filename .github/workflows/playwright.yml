@@ -32,7 +32,7 @@ jobs:
           DISPLAY: :99
 
       - name: Run Playwright tests
-        run: pnpm exec playwright test
+        run: pnpm exec playwright test tests/movie.spec.ts
         env:
           DO_URL: ${{ secrets.DO_URL }}
           DISPLAY: :99
