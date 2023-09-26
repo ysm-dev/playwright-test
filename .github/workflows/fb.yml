@@ -16,15 +16,16 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - uses: actions/checkout@master
+      - uses: oven-sh/setup-bun@main
         with:
-          version: latest
+          bun-version: latest
+
       - name: Install dependencies
-        run: pnpm i -f --fix-lockfile
+        run: bun i -f
 
       - name: Install Playwright Browsers
-        run: pnpx playwright install --with-deps
+        run: bun run playwright install --with-deps
 
       - name: Set up Xvfb
         run: sudo apt-get install -y xvfb
@@ -35,7 +36,7 @@ jobs:
           DISPLAY: :99
 
       - name: Run Playwright
-        run: pnpm exec playwright test tests/fb.spec.ts
+        run: bun run playwright test tests/fb.spec.ts
         env:
           XS: ${{ secrets.XS }}
           DISPLAY: :99
@@ -49,7 +50,7 @@ jobs:
           git commit -m "Automated commit"
           git push
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@main
         if: always()
         with:
           name: playwright-report
